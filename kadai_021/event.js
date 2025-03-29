@@ -1,13 +1,11 @@
 const btn = document.getElementById('btn');
 const text = document.getElementById('text');
 
-setTimeout(function() {
-  console.log("2秒後に実行されました！");
-}, 2000);
-
 btn.addEventListener('click',function ()  {
 
-  text.innerText = 'ボタンをクリックしました';
-}
+setTimeout(function() {
+  console.log('２秒後に実行')
+  text.textContent = 'ボタンをクリックしました';
+}, 2000); // 2秒後に実行
 
-);
+});
